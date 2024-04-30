@@ -1,0 +1,1597 @@
+Timestamp,Instruction,,Input ,Output
+12/14/2023 13:31:02,"Generate HTML code for a dark-themed landing page with the following specifications:
+- Use a <section> element with the class ""dark:bg-gray-800 dark:text-gray-100"".
+- Inside the section, place a <div> element with the classes ""container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl"".
+- Include an <h1> element with the classes ""text-4xl font-bold leadi sm:text-5xl"". The text content should be ""Quisquam necessita vel"", and within the <span> element with the class ""dark:text-violet-400"", add the text ""laborum doloribus delectus"".
+- Add a <p> element with the classes ""px-8 mt-8 mb-12 text-lg"". The text content should be ""Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!"".
+- Create a <div> element with the classes ""flex flex-wrap justify-center"".
+- Inside the div, include two <button> elements. The first button should have the classes ""px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900"" with the text content ""Get started"". The second button should have the classes ""px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700"" with the text content ""Learn more"".",,Generate HTML code for a dark-themed landing page:,"<section class=""dark:bg-gray-800 dark:text-gray-100"">
+  <div class=""container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 
+lg:px-32 xl:max-w-3xl"">
+    <h1 class=""text-4xl font-bold leading-tight dark:text-violet-400 sm:text-5xl"">Quisquam necessita vel
+<span class=""dark:text-violet-400"">laborum doloribus delectus</span></h1>
+    <p class=""px-8 mt-8 mb-12 text-lg"">Cupiditate minima voluptate temporibus quia? Architecto beatae 
+esse ab amet vero eaque explicabo!</p>
+    <div class=""flex flex-wrap justify-center w-full"">
+      <button class=""px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-violet-400 
+dark:text-gray-900"">Get started</button>
+      <button class=""px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700"">Learn 
+more</button>
+    </div>
+  </div>
+</section>
+"
+12/14/2023 13:45:37,"Card Container:
+
+Create a <div> with classes flex flex-col m-8 rounded shadow-md w-60 sm:w-80 animate-pulse h-96.
+Top Section (Inside Container):
+
+Add a nested <div> with classes h-48 rounded-t dark:bg-gray-700.
+Content Section (Inside Container):
+
+Include another nested <div> with classes flex-1 px-4 py-8 space-y-4 sm:p-8 dark:bg-gray-900.
+Content Items (Inside Content Section):
+
+Create three <div> elements with classes w-full h-6 rounded dark:bg-gray-700 to represent content placeholders.
+Additional Details:
+
+Ensure responsiveness using appropriate width classes (w-60, sm:w-80) and padding (px, py) for different screen sizes.
+Implement dark mode support with classes like dark:bg-gray-700, dark:bg-gray-900 for dark backgrounds.","Construct an skeleton loader resembling a card component using Tailwind CSS classes, featuring a responsive layout and dark mode support.",,"<div class=""flex flex-col m-8 rounded shadow-md w-60 sm:w-80 h-96 animate-pulse"">
+  <div class=""h-48 rounded-t dark:bg-gray-700"">
+    <!-- Top Section content goes here -->
+  </div>
+  <div class=""flex-1 px-4 py-8 space-y-4 sm:p-8 dark:bg-gray-900"">
+    <div class=""w-full h-6 rounded dark:bg-gray-700""></div>
+    <div class=""w-full h-6 rounded dark:bg-gray-700""></div>
+    <div class=""w-full h-6 rounded dark:bg-gray-700""></div>
+    <!-- Additional content goes here -->
+  </div>
+</div>
+"
+12/14/2023 13:50:57,"Generate a <div> element with classes py-4, rounded, shadow-md, w-60, sm:w-80, animate-pulse, dark:bg-gray-900.
+Header Section (Inside Container):
+
+Include a <div> with classes flex, p-4, space-x-4, sm:px-8.
+Within this div, add:
+A div with classes flex-shrink-0, w-16, h-16, rounded-full, dark:bg-gray-700.
+Another div with classes flex-1, py-2, space-y-4.
+Inside the latter div, include:
+Two divs with classes w-full h-3 rounded, dark:bg-gray-700 and w-5/6 h-3 rounded, dark:bg-gray-700.
+Details Section (Inside Container):
+
+Create another <div> with classes p-4, space-y-4, sm:px-8.
+Inside this div, add:
+Three divs with classes w-full h-4 rounded, dark:bg-gray-700, representing different details.
+",Create an skeleton structure resembling a profile card component with Tailwind CSS classes. The card should support dark mode.,,"<div class=""py-4 rounded shadow-md w-60 sm:w-80 animate-pulse dark:bg-gray-900"">
+  <div class=""flex items-center p-4 space-x-4 sm:px-8"">
+    <div class=""flex-shrink-0 w-16 h-16 rounded-full dark:bg-gray-700"">
+      <!-- Header image or icon goes here -->
+    </div>
+    <div class=""flex-1 py-2 space-y-4"">
+      <div class=""w-full h-3 rounded dark:bg-gray-700""></div>
+      <div class=""w-5/6 h-3 rounded dark:bg-gray-700""></div>
+    </div>
+  </div>
+  <div class=""p-4 space-y-4 sm:px-8"">
+    <div class=""w-full h-4 rounded dark:bg-gray-700""></div>
+    <div class=""w-full h-4 rounded dark:bg-gray-700""></div>
+    <div class=""w-full h-4 rounded dark:bg-gray-700""></div>
+  </div>
+</div>"
+1/30/2024 14:27:06,"Video Player
+
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64.
+Video Element (Inside Container):
+
+Add a nested <video> element with classes w-full h-full and the attributes src, controls, and autoplay. The src attribute should point to a valid video file URL.
+Caption Element (Inside Container):
+
+Include another nested <div> with classes text-center text-gray-700 p-2. Inside this <div>, add a <p> element with some text to describe the video.
+Additional Details:
+
+Use the controls attribute to enable the user to play, pause, and adjust the volume of the video.
+Use the autoplay attribute to make the video start playing as soon as it is loaded.
+",,"
+","<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <video class=""w-full h-full"" src=""https://example.com/video.mp4"" controls autoplay></video>
+  <div class=""text-center text-gray-700 p-2"">
+    <p>This is a sample video player</p>
+  </div>
+</div>
+"
+1/30/2024 14:29:12,"Create a <div> with classes fixed inset-0 flex items-center justify-center z-10.
+Overlay Element (Inside Container):
+
+Add a nested <div> element with classes absolute inset-0 bg-black opacity-50 to create a dark overlay behind the dialog box.
+Dialog Element (Inside Container):
+
+Include another nested <div> element with classes relative bg-white rounded shadow-lg p-4 w-80 h-48 to create the dialog box itself.
+Close Button (Inside Dialog Element):
+
+Create a <button> element with classes absolute top-2 right-2 text-gray-400 hover:text-gray-600 and the attribute type=""button"". Inside this <button>, add a <span> element with the text ""×"".
+Dialog Content (Inside Dialog Element):
+
+Add a <div> element with classes flex flex-col h-full. Inside this <div>, add a <h3> element with classes text-lg font-bold text-gray-800 and some text for the dialog title. Then, add a <p> element with classes flex-1 text-gray-600 and some text for the dialog message. Finally, add a <div> element with classes flex gap-2 mt-4. Inside this <div>, add two <button> elements with classes px-4 py-2 rounded and the attribute type=""button"". The first <button> should have classes bg-blue-600 text-white hover:bg-blue-700 and some text for the confirm action. The second <button> should have classes bg-gray-200 text-gray-800 hover:bg-gray-300 and some text for the cancel action.
+Additional Details:
+
+Use the fixed and inset-0 classes to position the container element over the entire viewport.
+Use the z-10 class to ensure the container element is above other elements on the page.
+Use the relative and absolute classes to position the dialog element and the close button element inside the container element.
+
+.",,Create a Dialog Box,"<div class=""fixed inset-0 flex items-center justify-center z-10"">
+  <div class=""absolute inset-0 bg-black opacity-50""></div>
+  <div class=""relative bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <button class=""absolute top-2 right-2 text-gray-400 hover:text-gray-600"" type=""button"">
+      <span>×</span>
+    </button>
+    <div class=""flex flex-col h-full"">
+      <h3 class=""text-lg font-bold text-gray-800"">Dialog Title</h3>
+      <p class=""flex-1 text-gray-600"">This is a sample dialog box with some message.</p>
+      <div class=""flex gap-2 mt-4"">
+        <button class=""px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700"" type=""button"">Confirm</button>
+        <button class=""px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300"" type=""button"">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+"
+1/30/2024 14:30:59,"
+Create a <div> with classes relative w-full h-64 overflow-hidden.
+Slides Container (Inside Container):
+
+Add a nested <div> element with classes absolute inset-0 flex transition-transform duration-1000 ease-in-out. This element will contain the slides and will be animated using CSS transforms.
+Slide Elements (Inside Slides Container):
+
+Include four nested <div> elements with classes w-full h-full flex-shrink-0. Each of these elements will represent a slide. Inside each slide element, add an <img> element with classes w-full h-full object-cover and the attribute src. The src attribute should point to a valid image file URL. Optionally, you can also add a <div> element with classes absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent to create a gradient overlay on the slide. Inside this <div>, you can add a <h3> element with classes text-xl font-bold text-white and some text for the slide title.
+Navigation Buttons (Inside Container):
+
+Create two <button> elements with classes absolute top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-full bg-white shadow text-gray-800 and the attribute type=""button"". These elements will be used to navigate between the slides. The first <button> should have the class left-4 and the text ""<"". The second <button> should have the class right-4 and the text "">"".
+Additional Details:
+
+Use the transition-transform and duration-1000 classes to create a smooth transition effect for the slides container.
+Use the ease-in-out class to create a smooth acceleration and deceleration for the slides container.
+Use the object-cover class to make the images fit the slide elements without stretching or cropping.
+Use the bg-gradient-to-t class to create a linear gradient from bottom to top on the overlay element.
+
+.",,Create a Carousel,"<div class=""relative w-full h-64 overflow-hidden"">
+  <div class=""absolute inset-0 flex transition-transform duration-1000 ease-in-out"">
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image1.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 1</h3>
+      </div>
+    </div>
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image2.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 2</h3>
+      </div>
+    </div>
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image3.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 3</h3>
+      </div>
+    </div>
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image4.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 4</h3>
+      </div>
+    </div>
+  </div>
+  <button class=""absolute top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-full bg-white shadow text-gray-800 left-4"" type=""button""><</button>
+  <button class=""absolute top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-full bg-white shadow text-gray-800 right-4"" type=""button"">></button>
+</div>
+"
+1/30/2024 14:32:48,"Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64.
+Button Element (Inside Container):
+
+Add a nested <button> element with classes px-4 py-2 rounded bg-green-600 text-white hover:bg-green-700 and the attribute type=""button"". Inside this <button>, add some text for the button label.
+Additional Details:
+
+Use the hover:bg-green-700 class to create a darker shade of green when the user hovers over the button.
+Use the text-white class to make the button text contrast with the background color.
+
+",,Create a button,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <button class=""px-4 py-2 rounded bg-green-600 text-white hover:bg-green-700"" type=""button"">Click Me</button>
+</div>
+"
+2/13/2024 12:28:23,"Table:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Table Element (Inside Container):
+
+Add a nested <table> element with classes border-collapse border border-gray-200 w-full h-full. This element will create a table with borders and fill the container. Table Row Elements (Inside Table Element):
+
+Include several nested <tr> elements with classes border-b border-gray-200. Each of these elements will represent a table row. Table Cell Elements (Inside Table Row Elements):
+
+Include several nested <td> or <th> elements with classes px-4 py-2 text-center. Each of these elements will represent a table cell. The <td> element is used for regular data cells, while the <th> element is used for header cells. Inside each cell element, add some text for the cell content. Additional Details:
+
+Use the border-collapse class to collapse the borders of the table into a single line. Use the text-center class to align the text in the center of the cells.
+",,Create a table ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <table class=""border-collapse border border-gray-200 w-full h-full"">
+    <tr class=""border-b border-gray-200"">
+      <th class=""px-4 py-2 text-center"">Name</th>
+      <th class=""px-4 py-2 text-center"">Age</th>
+      <th class=""px-4 py-2 text-center"">Gender</th>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Alice</td>
+      <td class=""px-4 py-2 text-center"">25</td>
+      <td class=""px-4 py-2 text-center"">Female</td>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Bob</td>
+      <td class=""px-4 py-2 text-center"">30</td>
+      <td class=""px-4 py-2 text-center"">Male</td>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Charlie</td>
+      <td class=""px-4 py-2 text-center"">35</td>
+      <td class=""px-4 py-2 text-center"">Male</td>
+    </tr>
+  </table>
+</div>
+AI-generated code. Review and use carefully. More info on FAQ.
+Report Error:
+Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Error Element (Inside Container):
+
+Add a nested <div> element with classes bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative w-80 h-48. This element will create a red box with an error message and a close button. Close Button (Inside Error Element):
+
+Create a <button> element with classes absolute top-0 right-0 px-4 py-3 and the attribute type=“button”. Inside this <button>, add a <span> element with classes text-red-400 hover:text-red-600 and the text “×”. Error Message (Inside Error Element):
+
+Add a <p> element with classes font-bold and some text for the error title. Then, add another <p> element with some text for the error details. Additional Details:
+
+Use the relative and absolute classes to position the error element and the close button element inside the container element. Use the hover:text-red-600 class to create a darker shade of red when the user hovers over the close button.
+
+HTML"
+2/13/2024 12:35:12,"Paragraphs:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Paragraph Elements (Inside Container):
+
+Add several nested <p> elements with classes text-gray-800 and some text for the paragraph content. Each of these elements will create a paragraph with a default margin between them. Additional Details:
+
+Use the text-gray-800 class to make the paragraph text contrast with the background color.
+",,Create a Paragraph ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <p class=""text-gray-800"">This is the first paragraph.</p>
+  <p class=""text-gray-800"">This is the second paragraph.</p>
+  <p class=""text-gray-800"">This is the third paragraph.</p>
+</div>"
+2/13/2024 12:38:08,"Article:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Article Element (Inside Container):
+
+Add a nested <article> element with classes bg-white rounded shadow-lg p-4 w-80 h-48. This element will create a self-contained composition that can be independently distributable or reusable. Article Title (Inside Article Element):
+
+Add a <h2> element with classes text-lg font-bold text-gray-800 and some text for the article title. Article Content (Inside Article Element):
+
+Add a <p> element with classes text-gray-600 and some text for the article content. Additional Details:
+
+Use the bg-white class to make the article element stand out from the background color. Use the rounded and shadow-lg classes to create a rounded border and a shadow effect for the article element.
+",,Create an article with desired measures,"<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <article class=""bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <h2 class=""text-lg font-bold text-gray-800"">Article Title</h2>
+    <p class=""text-gray-600"">This is a sample article with some content.</p>
+  </article>
+</div>
+"
+2/13/2024 12:40:16,"Document metadata:
+Create a <html> element with the attribute lang=“en”. This element will create the root element of the document and specify the language of the document as English. Head Element (Inside HTML Element):
+
+Add a nested <head> element. This element will contain the document metadata, such as the title, links, and meta tags. Title Element (Inside Head Element):
+
+Add a nested <title> element with some text for the document title. This element will define the title of the document, which is usually displayed in the browser’s title bar or tab. Link Element (Inside Head Element):
+
+Add a nested <link> element with the attributes rel=“stylesheet” and href. The rel attribute specifies the relationship between the document and the linked resource, which is a stylesheet in this case. The href attribute specifies the URL of the linked resource, which is a CSS file in this case. Meta Element (Inside Head Element):
+
+Add a nested <meta> element with the attributes name=“description” and content. The name attribute specifies the name of the metadata, which is a description in this case. The content attribute specifies the value of the metadata, which is a brief summary of the document in this case. Additional Details:
+
+Use the lang attribute to declare the language of the document, which can help with accessibility and search engine optimization. Use the <link> element to link to external resources, such as stylesheets, icons, and fonts. Use the <meta> element to provide additional information about the document, such as keywords, author, and viewport settings.
+",,Create a nested data ,"<html lang=""en"">
+  <head>
+    <title>Document Title</title>
+    <link rel=""stylesheet"" href=""style.css"">
+    <meta name=""description"" content=""This is a sample document with some metadata."">
+  </head>
+  <!-- The rest of the document goes here -->
+</html>"
+2/13/2024 12:42:34,"Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Anchor Element (Inside Container):
+
+Add a nested <a> element with classes text-blue-600 hover:text-blue-800 underline and the attribute href. The href attribute should point to a valid web page URL. Inside this <a>, add some text for the anchor label. Additional Details:
+
+Use the hover:text-blue-800 class to create a darker shade of blue when the user hovers over the anchor. Use the underline class to add an underline to the anchor text.
+",,Create a <div> with classes flex items,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <a class=""text-blue-600 hover:text-blue-800"
+2/13/2024 12:45:01,"Description Lists:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Description List Element (Inside Container):
+
+Add a nested <dl> element with classes list-none p-0 m-0 w-full h-full. This element will create a list of terms and descriptions, which can be used for glossaries or metadata. Term Elements (Inside Description List Element):
+
+Add several nested <dt> elements with classes font-bold text-gray-800 and some text for the term or name. Description Elements (Inside Description List Element):
+
+Add several nested <dd> elements with classes text-gray-600 and some text for the description or value of the term or name. Additional Details:
+
+Use the list-none class to remove the default list style of the <dl> element. Use the font-bold class to make the term elements stand out from the description elements.",,Create a description list ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <dl class=""list-none p-0 m-0 w-full h-full"">
+    <dt class=""font-bold text-gray-800"">HTML</dt>
+    <dd class=""text-gray-600"">HyperText Markup Language</dd>
+    <dt class=""font-bold text-gray-800"">CSS</dt>
+    <dd class=""text-gray-600"">Cascading Style Sheets</dd>
+    <dt class=""font-bold text-gray-800"">JavaScript</dt>
+    <dd class=""text-gray-600"">A scripting language for web development</dd>
+  </dl>
+</div>"
+2/13/2024 12:46:57,"Datalist:
+Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Input Element (Inside Container):
+
+Add a nested <input> element with classes border border-gray-200 px-4 py-2 rounded w-80 and the attributes type=“text” and list. The type attribute specifies the input type as text, and the list attribute specifies the id of the <datalist> element that contains the options for the input. Datalist Element (Inside Container):
+
+Add a nested <datalist> element with the attribute id. The id attribute should match the value of the list attribute of the <input> element. This element will create a list of predefined options for the input. Option Elements (Inside Datalist Element):
+
+Add several nested <option> elements with the attribute value. The value attribute specifies the value of the option, which will be displayed in the input when selected. Additional Details:
+
+Use the border and rounded classes to create a styled input element. Use the datalist element to provide autocomplete suggestions for the input element.",,Datalist,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <input class=""border border-gray-200 px-4 py-2 rounded w-80"" type=""text"" list=""languages"">
+  <datalist id=""languages"">
+    <option value=""HTML"">
+    <option value=""CSS"">
+    <option value=""JavaScript"">
+    <option value=""Python"">
+    <option value=""Java"">
+  </datalist>
+</div>"
+2/13/2024 12:50:08,"Text Area:
+Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Form Element (Inside Container):
+
+Add a nested <form> element with classes w-80 h-48. This element will create a form that can contain various input elements. Label Element (Inside Form Element):
+
+Add a nested <label> element with classes block text-gray-800 and the attribute for. The for attribute specifies the id of the <textarea> element that the label is associated with. Inside this <label>, add some text for the label of the text area. Text Area Element (Inside Form Element):
+
+Add a nested <textarea> element with classes border border-gray-200 px-4 py-2 rounded w-full h-32 mt-2 and the attribute id. The id attribute should match the value of the for attribute of the <label> element. This element will create a multi-line text input field. Additional Details:
+
+Use the block class to display the label element as a block-level element. Use the mt-2 class to create a margin-top of 0.5rem between the label and the text area elements. Use the border and rounded classes to create a styled text area element.",,Forming text area inside a form,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <form class=""w-80 h-48"">
+    <label class=""block text-gray-800"" for=""message"">Your Message</label>
+    <textarea class=""border border-gray-200 px-4 py-2 rounded w-full h-32 mt-2"" id=""message""></textarea>
+  </form>
+</div>"
+2/13/2024 12:51:58,"Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Image Element (Inside Container):
+
+Add a nested <img> element with classes w-32 h-32 rounded-full and the attribute src. The src attribute should point to a valid image file URL. This element will create an image that represents a user’s avatar or profile picture. Additional Details:
+
+Use the w-32 and h-32 classes to set the width and height of the image element to 8rem. Use the rounded-full class to create a circular shape for the image element.
+",,Create an image element inside a form,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <img class=""w-32 h-32 rounded-full"" src=""https://example.com/avatar.jpg"">
+</div>"
+2/13/2024 13:08:42,"Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Heatmap Element (Inside Container):
+
+Add a nested <canvas> element with classes w-80 h-48 and the attribute id. The id attribute should be a unique identifier for the heatmap element. This element will create a canvas where the heatmap will be drawn using JavaScript and a heatmap library, such as heatmap.js1. Additional Details:
+
+Use the <canvas> element to create a blank area where the heatmap will be rendered using JavaScript. Use a heatmap library, such as heatmap.js, to create a heatmap that shows the intensity or frequency of data values in a given area. You will need to include the library script in your HTML document and write some JavaScript code to initialize and configure the heatmap. You can find examples and documentation on the heatmap.js website1.",,Heatmaps,"<div class=“flex items-center justify-center bg-gray-100 w-96 h-64”> <canvas class=“w-80 h-48” id=“myHeatmap”></canvas> </div>
+
+<!-- Include the heatmap.js library script --> <script src=“https://cdnjs.cloudflare.com/ajax/libs/heatmap.js/2.0.5/heatmap.min.js”></script>
+
+<!-- Write some JavaScript code to create the heatmap --> <script> // Get the canvas element by id var canvas = document.getElementById(‘myHeatmap’);
+
+// Create a new heatmap instance var heatmap = heatmapFactory.create({ // Specify the canvas element as the container container: canvas });
+
+// Generate some random data points for the heatmap var points = []; var max = 0; var width = canvas.width; var height = canvas.height; var len = 200;
+
+while (len–) { var val = Math.floor(Math.random()*100); max = Math.max(max, val); var point = { x: Math.floor(Math.random()*width), y: Math.floor(Math.random()*height), value: val }; points.push(point); }
+
+// Set the data and the maximum value for the heatmap heatmap.setData({ max: max, data: points }); </script>"
+1/30/2024 14:30:59,"
+Create a <div> with classes relative w-full h-64 overflow-hidden.
+Slides Container (Inside Container):
+
+Add a nested <div> element with classes absolute inset-0 flex transition-transform duration-1000 ease-in-out. This element will contain the slides and will be animated using CSS transforms.
+Slide Elements (Inside Slides Container):
+
+Include four nested <div> elements with classes w-full h-full flex-shrink-0. Each of these elements will represent a slide. Inside each slide element, add an <img> element with classes w-full h-full object-cover and the attribute src. The src attribute should point to a valid image file URL. Optionally, you can also add a <div> element with classes absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent to create a gradient overlay on the slide. Inside this <div>, you can add a <h3> element with classes text-xl font-bold text-white and some text for the slide title.
+Navigation Buttons (Inside Container):
+
+Create two <button> elements with classes absolute top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-full bg-white shadow text-gray-800 and the attribute type=""button"". These elements will be used to navigate between the slides. The first <button> should have the class left-4 and the text ""<"". The second <button> should have the class right-4 and the text "">"".
+Additional Details:
+
+Use the transition-transform and duration-1000 classes to create a smooth transition effect for the slides container.
+Use the ease-in-out class to create a smooth acceleration and deceleration for the slides container.
+Use the object-cover class to make the images fit the slide elements without stretching or cropping.
+Use the bg-gradient-to-t class to create a linear gradient from bottom to top on the overlay element.
+
+.",,Create a Carousel,"<div class=""relative w-full h-64 overflow-hidden"">
+  <div class=""absolute inset-0 flex transition-transform duration-1000 ease-in-out"">
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image1.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 1</h3>
+      </div>
+    </div>
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image2.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 2</h3>
+      </div>
+    </div>
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image3.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 3</h3>
+      </div>
+    </div>
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image4.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 4</h3>
+      </div>
+    </div>
+  </div>
+  <button class=""absolute top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-full bg-white shadow text-gray-800 left-4"" type=""button""><</button>
+  <button class=""absolute top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-full bg-white shadow text-gray-800 right-4"" type=""button"">></button>
+</div>
+"
+1/30/2024 14:27:06,"Video Player
+
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64.
+Video Element (Inside Container):
+
+Add a nested <video> element with classes w-full h-full and the attributes src, controls, and autoplay. The src attribute should point to a valid video file URL.
+Caption Element (Inside Container):
+
+Include another nested <div> with classes text-center text-gray-700 p-2. Inside this <div>, add a <p> element with some text to describe the video.
+Additional Details:
+
+Use the controls attribute to enable the user to play, pause, and adjust the volume of the video.
+Use the autoplay attribute to make the video start playing as soon as it is loaded.
+",Create a Video Player,"
+","<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <video class=""w-full h-full"" src=""https://example.com/video.mp4"" controls autoplay></video>
+  <div class=""text-center text-gray-700 p-2"">
+    <p>This is a sample video player</p>
+  </div>
+</div>
+"
+,,,,
+2/13/2024 12:35:12,"Paragraphs:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Paragraph Elements (Inside Container):
+
+Add several nested <p> elements with classes text-gray-800 and some text for the paragraph content. Each of these elements will create a paragraph with a default margin between them. Additional Details:
+
+Use the text-gray-800 class to make the paragraph text contrast with the background color.
+",,Create a Paragraph ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <p class=""text-gray-800"">This is the first paragraph.</p>
+  <p class=""text-gray-800"">This is the second paragraph.</p>
+  <p class=""text-gray-800"">This is the third paragraph.</p>
+</div>"
+2/13/2024 12:38:08,"Article:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Article Element (Inside Container):
+
+Add a nested <article> element with classes bg-white rounded shadow-lg p-4 w-80 h-48. This element will create a self-contained composition that can be independently distributable or reusable. Article Title (Inside Article Element):
+
+Add a <h2> element with classes text-lg font-bold text-gray-800 and some text for the article title. Article Content (Inside Article Element):
+
+Add a <p> element with classes text-gray-600 and some text for the article content. Additional Details:
+
+Use the bg-white class to make the article element stand out from the background color. Use the rounded and shadow-lg classes to create a rounded border and a shadow effect for the article element.
+",,Create an article with desired measures,"<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <article class=""bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <h2 class=""text-lg font-bold text-gray-800"">Article Title</h2>
+    <p class=""text-gray-600"">This is a sample article with some content.</p>
+  </article>
+</div>
+"
+,,,,
+2/13/2024 12:42:34,"Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Anchor Element (Inside Container):
+
+Add a nested <a> element with classes text-blue-600 hover:text-blue-800 underline and the attribute href. The href attribute should point to a valid web page URL. Inside this <a>, add some text for the anchor label. Additional Details:
+
+Use the hover:text-blue-800 class to create a darker shade of blue when the user hovers over the anchor. Use the underline class to add an underline to the anchor text.
+",,Create a <div> with classes flex items,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <a class=""text-blue-600 hover:text-blue-800"
+1/30/2024 14:29:12,"Create a <div> with classes fixed inset-0 flex items-center justify-center z-10.
+Overlay Element (Inside Container):
+
+Add a nested <div> element with classes absolute inset-0 bg-black opacity-50 to create a dark overlay behind the dialog box.
+Dialog Element (Inside Container):
+
+Include another nested <div> element with classes relative bg-white rounded shadow-lg p-4 w-80 h-48 to create the dialog box itself.
+Close Button (Inside Dialog Element):
+
+Create a <button> element with classes absolute top-2 right-2 text-gray-400 hover:text-gray-600 and the attribute type=""button"". Inside this <button>, add a <span> element with the text ""×"".
+Dialog Content (Inside Dialog Element):
+
+Add a <div> element with classes flex flex-col h-full. Inside this <div>, add a <h3> element with classes text-lg font-bold text-gray-800 and some text for the dialog title. Then, add a <p> element with classes flex-1 text-gray-600 and some text for the dialog message. Finally, add a <div> element with classes flex gap-2 mt-4. Inside this <div>, add two <button> elements with classes px-4 py-2 rounded and the attribute type=""button"". The first <button> should have classes bg-blue-600 text-white hover:bg-blue-700 and some text for the confirm action. The second <button> should have classes bg-gray-200 text-gray-800 hover:bg-gray-300 and some text for the cancel action.
+Additional Details:
+
+Use the fixed and inset-0 classes to position the container element over the entire viewport.
+Use the z-10 class to ensure the container element is above other elements on the page.
+Use the relative and absolute classes to position the dialog element and the close button element inside the container element.
+
+.",,Create a Dialog Box,"<div class=""fixed inset-0 flex items-center justify-center z-10"">
+  <div class=""absolute inset-0 bg-black opacity-50""></div>
+  <div class=""relative bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <button class=""absolute top-2 right-2 text-gray-400 hover:text-gray-600"" type=""button"">
+      <span>×</span>
+    </button>
+    <div class=""flex flex-col h-full"">
+      <h3 class=""text-lg font-bold text-gray-800"">Dialog Title</h3>
+      <p class=""flex-1 text-gray-600"">This is a sample dialog box with some message.</p>
+      <div class=""flex gap-2 mt-4"">
+        <button class=""px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700"" type=""button"">Confirm</button>
+        <button class=""px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300"" type=""button"">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+"
+,,,,
+2/13/2024 12:38:08,"Article:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Article Element (Inside Container):
+
+Add a nested <article> element with classes bg-white rounded shadow-lg p-4 w-80 h-48. This element will create a self-contained composition that can be independently distributable or reusable. Article Title (Inside Article Element):
+
+Add a <h2> element with classes text-lg font-bold text-gray-800 and some text for the article title. Article Content (Inside Article Element):
+
+Add a <p> element with classes text-gray-600 and some text for the article content. Additional Details:
+
+Use the bg-white class to make the article element stand out from the background color. Use the rounded and shadow-lg classes to create a rounded border and a shadow effect for the article element.
+",,Create an article with desired measures,"<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <article class=""bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <h2 class=""text-lg font-bold text-gray-800"">Article Title</h2>
+    <p class=""text-gray-600"">This is a sample article with some content.</p>
+  </article>
+</div>
+"
+,,,,
+2/13/2024 12:35:12,"Paragraphs:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Paragraph Elements (Inside Container):
+
+Add several nested <p> elements with classes text-gray-800 and some text for the paragraph content. Each of these elements will create a paragraph with a default margin between them. Additional Details:
+
+Use the text-gray-800 class to make the paragraph text contrast with the background color.
+",,Create a Paragraph ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <p class=""text-gray-800"">This is the first paragraph.</p>
+  <p class=""text-gray-800"">This is the second paragraph.</p>
+  <p class=""text-gray-800"">This is the third paragraph.</p>
+</div>"
+,,,,
+,,,,
+,,,,
+1/30/2024 14:27:06,"Video Player
+
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64.
+Video Element (Inside Container):
+
+Add a nested <video> element with classes w-full h-full and the attributes src, controls, and autoplay. The src attribute should point to a valid video file URL.
+Caption Element (Inside Container):
+
+Include another nested <div> with classes text-center text-gray-700 p-2. Inside this <div>, add a <p> element with some text to describe the video.
+Additional Details:
+
+Use the controls attribute to enable the user to play, pause, and adjust the volume of the video.
+Use the autoplay attribute to make the video start playing as soon as it is loaded.
+",Create a Video Player,"
+","<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <video class=""w-full h-full"" src=""https://example.com/video.mp4"" controls autoplay></video>
+  <div class=""text-center text-gray-700 p-2"">
+    <p>This is a sample video player</p>
+  </div>
+</div>
+"
+2/13/2024 12:38:08,"Article:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Article Element (Inside Container):
+
+Add a nested <article> element with classes bg-white rounded shadow-lg p-4 w-80 h-48. This element will create a self-contained composition that can be independently distributable or reusable. Article Title (Inside Article Element):
+
+Add a <h2> element with classes text-lg font-bold text-gray-800 and some text for the article title. Article Content (Inside Article Element):
+
+Add a <p> element with classes text-gray-600 and some text for the article content. Additional Details:
+
+Use the bg-white class to make the article element stand out from the background color. Use the rounded and shadow-lg classes to create a rounded border and a shadow effect for the article element.
+",,Create an article with desired measures,"<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <article class=""bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <h2 class=""text-lg font-bold text-gray-800"">Article Title</h2>
+    <p class=""text-gray-600"">This is a sample article with some content.</p>
+  </article>
+</div>
+"
+2/13/2024 12:28:23,"Table:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Table Element (Inside Container):
+
+Add a nested <table> element with classes border-collapse border border-gray-200 w-full h-full. This element will create a table with borders and fill the container. Table Row Elements (Inside Table Element):
+
+Include several nested <tr> elements with classes border-b border-gray-200. Each of these elements will represent a table row. Table Cell Elements (Inside Table Row Elements):
+
+Include several nested <td> or <th> elements with classes px-4 py-2 text-center. Each of these elements will represent a table cell. The <td> element is used for regular data cells, while the <th> element is used for header cells. Inside each cell element, add some text for the cell content. Additional Details:
+
+Use the border-collapse class to collapse the borders of the table into a single line. Use the text-center class to align the text in the center of the cells.
+",,Create a table ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <table class=""border-collapse border border-gray-200 w-full h-full"">
+    <tr class=""border-b border-gray-200"">
+      <th class=""px-4 py-2 text-center"">Name</th>
+      <th class=""px-4 py-2 text-center"">Age</th>
+      <th class=""px-4 py-2 text-center"">Gender</th>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Alice</td>
+      <td class=""px-4 py-2 text-center"">25</td>
+      <td class=""px-4 py-2 text-center"">Female</td>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Bob</td>
+      <td class=""px-4 py-2 text-center"">30</td>
+      <td class=""px-4 py-2 text-center"">Male</td>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Charlie</td>
+      <td class=""px-4 py-2 text-center"">35</td>
+      <td class=""px-4 py-2 text-center"">Male</td>
+    </tr>
+  </table>
+</div>
+AI-generated code. Review and use carefully. More info on FAQ.
+Report Error:
+Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Error Element (Inside Container):
+
+Add a nested <div> element with classes bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative w-80 h-48. This element will create a red box with an error message and a close button. Close Button (Inside Error Element):
+
+Create a <button> element with classes absolute top-0 right-0 px-4 py-3 and the attribute type=“button”. Inside this <button>, add a <span> element with classes text-red-400 hover:text-red-600 and the text “×”. Error Message (Inside Error Element):
+
+Add a <p> element with classes font-bold and some text for the error title. Then, add another <p> element with some text for the error details. Additional Details:
+
+Use the relative and absolute classes to position the error element and the close button element inside the container element. Use the hover:text-red-600 class to create a darker shade of red when the user hovers over the close button.
+
+HTML"
+,,,,
+,,,,
+2/13/2024 12:35:12,"Paragraphs:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Paragraph Elements (Inside Container):
+
+Add several nested <p> elements with classes text-gray-800 and some text for the paragraph content. Each of these elements will create a paragraph with a default margin between them. Additional Details:
+
+Use the text-gray-800 class to make the paragraph text contrast with the background color.
+",,Create a Paragraph ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <p class=""text-gray-800"">This is the first paragraph.</p>
+  <p class=""text-gray-800"">This is the second paragraph.</p>
+  <p class=""text-gray-800"">This is the third paragraph.</p>
+</div>"
+,,,,
+2/13/2024 12:42:34,"Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Anchor Element (Inside Container):
+
+Add a nested <a> element with classes text-blue-600 hover:text-blue-800 underline and the attribute href. The href attribute should point to a valid web page URL. Inside this <a>, add some text for the anchor label. Additional Details:
+
+Use the hover:text-blue-800 class to create a darker shade of blue when the user hovers over the anchor. Use the underline class to add an underline to the anchor text.
+",,Create a <div> with classes flex items,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <a class=""text-blue-600 hover:text-blue-800"
+1/30/2024 14:29:12,"Create a <div> with classes fixed inset-0 flex items-center justify-center z-10.
+Overlay Element (Inside Container):
+
+Add a nested <div> element with classes absolute inset-0 bg-black opacity-50 to create a dark overlay behind the dialog box.
+Dialog Element (Inside Container):
+
+Include another nested <div> element with classes relative bg-white rounded shadow-lg p-4 w-80 h-48 to create the dialog box itself.
+Close Button (Inside Dialog Element):
+
+Create a <button> element with classes absolute top-2 right-2 text-gray-400 hover:text-gray-600 and the attribute type=""button"". Inside this <button>, add a <span> element with the text ""×"".
+Dialog Content (Inside Dialog Element):
+
+Add a <div> element with classes flex flex-col h-full. Inside this <div>, add a <h3> element with classes text-lg font-bold text-gray-800 and some text for the dialog title. Then, add a <p> element with classes flex-1 text-gray-600 and some text for the dialog message. Finally, add a <div> element with classes flex gap-2 mt-4. Inside this <div>, add two <button> elements with classes px-4 py-2 rounded and the attribute type=""button"". The first <button> should have classes bg-blue-600 text-white hover:bg-blue-700 and some text for the confirm action. The second <button> should have classes bg-gray-200 text-gray-800 hover:bg-gray-300 and some text for the cancel action.
+Additional Details:
+
+Use the fixed and inset-0 classes to position the container element over the entire viewport.
+Use the z-10 class to ensure the container element is above other elements on the page.
+Use the relative and absolute classes to position the dialog element and the close button element inside the container element.
+
+.",,Create a Dialog Box,"<div class=""fixed inset-0 flex items-center justify-center z-10"">
+  <div class=""absolute inset-0 bg-black opacity-50""></div>
+  <div class=""relative bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <button class=""absolute top-2 right-2 text-gray-400 hover:text-gray-600"" type=""button"">
+      <span>×</span>
+    </button>
+    <div class=""flex flex-col h-full"">
+      <h3 class=""text-lg font-bold text-gray-800"">Dialog Title</h3>
+      <p class=""flex-1 text-gray-600"">This is a sample dialog box with some message.</p>
+      <div class=""flex gap-2 mt-4"">
+        <button class=""px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700"" type=""button"">Confirm</button>
+        <button class=""px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300"" type=""button"">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+"
+2/13/2024 12:35:12,"Paragraphs:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Paragraph Elements (Inside Container):
+
+Add several nested <p> elements with classes text-gray-800 and some text for the paragraph content. Each of these elements will create a paragraph with a default margin between them. Additional Details:
+
+Use the text-gray-800 class to make the paragraph text contrast with the background color.
+",,Create a Paragraph ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <p class=""text-gray-800"">This is the first paragraph.</p>
+  <p class=""text-gray-800"">This is the second paragraph.</p>
+  <p class=""text-gray-800"">This is the third paragraph.</p>
+</div>"
+12/14/2023 13:31:02,,,"Generate HTML code for a dark-themed landing page with the following specifications:
+- Use a <section> element with the class ""dark:bg-gray-800 dark:text-gray-100"".
+- Inside the section, place a <div> element with the classes ""container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl"".
+- Include an <h1> element with the classes ""text-4xl font-bold leadi sm:text-5xl"". The text content should be ""Quisquam necessita vel"", and within the <span> element with the class ""dark:text-violet-400"", add the text ""laborum doloribus delectus"".
+- Add a <p> element with the classes ""px-8 mt-8 mb-12 text-lg"". The text content should be ""Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!"".
+- Create a <div> element with the classes ""flex flex-wrap justify-center"".
+- Inside the div, include two <button> elements. The first button should have the classes ""px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900"" with the text content ""Get started"". The second button should have the classes ""px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700"" with the text content ""Learn more"".","<section class=""dark:bg-gray-800 dark:text-gray-100"">
+  <div class=""container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 
+lg:px-32 xl:max-w-3xl"">
+    <h1 class=""text-4xl font-bold leading-tight dark:text-violet-400 sm:text-5xl"">Quisquam necessita vel
+<span class=""dark:text-violet-400"">laborum doloribus delectus</span></h1>
+    <p class=""px-8 mt-8 mb-12 text-lg"">Cupiditate minima voluptate temporibus quia? Architecto beatae 
+esse ab amet vero eaque explicabo!</p>
+    <div class=""flex flex-wrap justify-center w-full"">
+      <button class=""px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-violet-400 
+dark:text-gray-900"">Get started</button>
+      <button class=""px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700"">Learn 
+more</button>
+    </div>
+  </div>
+</section>
+"
+12/14/2023 13:45:37,"Card Container:
+
+Create a <div> with classes flex flex-col m-8 rounded shadow-md w-60 sm:w-80 animate-pulse h-96.
+Top Section (Inside Container):
+
+Add a nested <div> with classes h-48 rounded-t dark:bg-gray-700.
+Content Section (Inside Container):
+
+Include another nested <div> with classes flex-1 px-4 py-8 space-y-4 sm:p-8 dark:bg-gray-900.
+Content Items (Inside Content Section):
+
+Create three <div> elements with classes w-full h-6 rounded dark:bg-gray-700 to represent content placeholders.
+Additional Details:
+
+Ensure responsiveness using appropriate width classes (w-60, sm:w-80) and padding (px, py) for different screen sizes.
+Implement dark mode support with classes like dark:bg-gray-700, dark:bg-gray-900 for dark backgrounds.","Construct an skeleton loader resembling a card component using Tailwind CSS classes, featuring a responsive layout and dark mode support.",,"<div class=""flex flex-col m-8 rounded shadow-md w-60 sm:w-80 h-96 animate-pulse"">
+  <div class=""h-48 rounded-t dark:bg-gray-700"">
+    <!-- Top Section content goes here -->
+  </div>
+  <div class=""flex-1 px-4 py-8 space-y-4 sm:p-8 dark:bg-gray-900"">
+    <div class=""w-full h-6 rounded dark:bg-gray-700""></div>
+    <div class=""w-full h-6 rounded dark:bg-gray-700""></div>
+    <div class=""w-full h-6 rounded dark:bg-gray-700""></div>
+    <!-- Additional content goes here -->
+  </div>
+</div>
+"
+12/14/2023 13:50:57,"Generate a <div> element with classes py-4, rounded, shadow-md, w-60, sm:w-80, animate-pulse, dark:bg-gray-900.
+Header Section (Inside Container):
+
+Include a <div> with classes flex, p-4, space-x-4, sm:px-8.
+Within this div, add:
+A div with classes flex-shrink-0, w-16, h-16, rounded-full, dark:bg-gray-700.
+Another div with classes flex-1, py-2, space-y-4.
+Inside the latter div, include:
+Two divs with classes w-full h-3 rounded, dark:bg-gray-700 and w-5/6 h-3 rounded, dark:bg-gray-700.
+Details Section (Inside Container):
+
+Create another <div> with classes p-4, space-y-4, sm:px-8.
+Inside this div, add:
+Three divs with classes w-full h-4 rounded, dark:bg-gray-700, representing different details.
+",Create an skeleton structure resembling a profile card component with Tailwind CSS classes. The card should support dark mode.,,"<div class=""py-4 rounded shadow-md w-60 sm:w-80 animate-pulse dark:bg-gray-900"">
+  <div class=""flex items-center p-4 space-x-4 sm:px-8"">
+    <div class=""flex-shrink-0 w-16 h-16 rounded-full dark:bg-gray-700"">
+      <!-- Header image or icon goes here -->
+    </div>
+    <div class=""flex-1 py-2 space-y-4"">
+      <div class=""w-full h-3 rounded dark:bg-gray-700""></div>
+      <div class=""w-5/6 h-3 rounded dark:bg-gray-700""></div>
+    </div>
+  </div>
+  <div class=""p-4 space-y-4 sm:px-8"">
+    <div class=""w-full h-4 rounded dark:bg-gray-700""></div>
+    <div class=""w-full h-4 rounded dark:bg-gray-700""></div>
+    <div class=""w-full h-4 rounded dark:bg-gray-700""></div>
+  </div>
+</div>"
+1/30/2024 14:27:06,"Video Player
+
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64.
+Video Element (Inside Container):
+
+Add a nested <video> element with classes w-full h-full and the attributes src, controls, and autoplay. The src attribute should point to a valid video file URL.
+Caption Element (Inside Container):
+
+Include another nested <div> with classes text-center text-gray-700 p-2. Inside this <div>, add a <p> element with some text to describe the video.
+Additional Details:
+
+Use the controls attribute to enable the user to play, pause, and adjust the volume of the video.
+Use the autoplay attribute to make the video start playing as soon as it is loaded.
+",Create a Video Player,"
+","<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <video class=""w-full h-full"" src=""https://example.com/video.mp4"" controls autoplay></video>
+  <div class=""text-center text-gray-700 p-2"">
+    <p>This is a sample video player</p>
+  </div>
+</div>
+"
+1/30/2024 14:29:12,"Create a <div> with classes fixed inset-0 flex items-center justify-center z-10.
+Overlay Element (Inside Container):
+
+Add a nested <div> element with classes absolute inset-0 bg-black opacity-50 to create a dark overlay behind the dialog box.
+Dialog Element (Inside Container):
+
+Include another nested <div> element with classes relative bg-white rounded shadow-lg p-4 w-80 h-48 to create the dialog box itself.
+Close Button (Inside Dialog Element):
+
+Create a <button> element with classes absolute top-2 right-2 text-gray-400 hover:text-gray-600 and the attribute type=""button"". Inside this <button>, add a <span> element with the text ""×"".
+Dialog Content (Inside Dialog Element):
+
+Add a <div> element with classes flex flex-col h-full. Inside this <div>, add a <h3> element with classes text-lg font-bold text-gray-800 and some text for the dialog title. Then, add a <p> element with classes flex-1 text-gray-600 and some text for the dialog message. Finally, add a <div> element with classes flex gap-2 mt-4. Inside this <div>, add two <button> elements with classes px-4 py-2 rounded and the attribute type=""button"". The first <button> should have classes bg-blue-600 text-white hover:bg-blue-700 and some text for the confirm action. The second <button> should have classes bg-gray-200 text-gray-800 hover:bg-gray-300 and some text for the cancel action.
+Additional Details:
+
+Use the fixed and inset-0 classes to position the container element over the entire viewport.
+Use the z-10 class to ensure the container element is above other elements on the page.
+Use the relative and absolute classes to position the dialog element and the close button element inside the container element.
+
+.",,Create a Dialog Box,"<div class=""fixed inset-0 flex items-center justify-center z-10"">
+  <div class=""absolute inset-0 bg-black opacity-50""></div>
+  <div class=""relative bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <button class=""absolute top-2 right-2 text-gray-400 hover:text-gray-600"" type=""button"">
+      <span>×</span>
+    </button>
+    <div class=""flex flex-col h-full"">
+      <h3 class=""text-lg font-bold text-gray-800"">Dialog Title</h3>
+      <p class=""flex-1 text-gray-600"">This is a sample dialog box with some message.</p>
+      <div class=""flex gap-2 mt-4"">
+        <button class=""px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700"" type=""button"">Confirm</button>
+        <button class=""px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300"" type=""button"">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+"
+1/30/2024 14:30:59,"
+Create a <div> with classes relative w-full h-64 overflow-hidden.
+Slides Container (Inside Container):
+
+Add a nested <div> element with classes absolute inset-0 flex transition-transform duration-1000 ease-in-out. This element will contain the slides and will be animated using CSS transforms.
+Slide Elements (Inside Slides Container):
+
+Include four nested <div> elements with classes w-full h-full flex-shrink-0. Each of these elements will represent a slide. Inside each slide element, add an <img> element with classes w-full h-full object-cover and the attribute src. The src attribute should point to a valid image file URL. Optionally, you can also add a <div> element with classes absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent to create a gradient overlay on the slide. Inside this <div>, you can add a <h3> element with classes text-xl font-bold text-white and some text for the slide title.
+Navigation Buttons (Inside Container):
+
+Create two <button> elements with classes absolute top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-full bg-white shadow text-gray-800 and the attribute type=""button"". These elements will be used to navigate between the slides. The first <button> should have the class left-4 and the text ""<"". The second <button> should have the class right-4 and the text "">"".
+Additional Details:
+
+Use the transition-transform and duration-1000 classes to create a smooth transition effect for the slides container.
+Use the ease-in-out class to create a smooth acceleration and deceleration for the slides container.
+Use the object-cover class to make the images fit the slide elements without stretching or cropping.
+Use the bg-gradient-to-t class to create a linear gradient from bottom to top on the overlay element.
+
+.",,Create a Carousel,"<div class=""relative w-full h-64 overflow-hidden"">
+  <div class=""absolute inset-0 flex transition-transform duration-1000 ease-in-out"">
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image1.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 1</h3>
+      </div>
+    </div>
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image2.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 2</h3>
+      </div>
+    </div>
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image3.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 3</h3>
+      </div>
+    </div>
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image4.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 4</h3>
+      </div>
+    </div>
+  </div>
+  <button class=""absolute top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-full bg-white shadow text-gray-800 left-4"" type=""button""><</button>
+  <button class=""absolute top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-full bg-white shadow text-gray-800 right-4"" type=""button"">></button>
+</div>
+"
+1/30/2024 14:32:48,"Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64.
+Button Element (Inside Container):
+
+Add a nested <button> element with classes px-4 py-2 rounded bg-green-600 text-white hover:bg-green-700 and the attribute type=""button"". Inside this <button>, add some text for the button label.
+Additional Details:
+
+Use the hover:bg-green-700 class to create a darker shade of green when the user hovers over the button.
+Use the text-white class to make the button text contrast with the background color.
+
+",,Create a button,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <button class=""px-4 py-2 rounded bg-green-600 text-white hover:bg-green-700"" type=""button"">Click Me</button>
+</div>
+"
+2/13/2024 12:28:23,"Table:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Table Element (Inside Container):
+
+Add a nested <table> element with classes border-collapse border border-gray-200 w-full h-full. This element will create a table with borders and fill the container. Table Row Elements (Inside Table Element):
+
+Include several nested <tr> elements with classes border-b border-gray-200. Each of these elements will represent a table row. Table Cell Elements (Inside Table Row Elements):
+
+Include several nested <td> or <th> elements with classes px-4 py-2 text-center. Each of these elements will represent a table cell. The <td> element is used for regular data cells, while the <th> element is used for header cells. Inside each cell element, add some text for the cell content. Additional Details:
+
+Use the border-collapse class to collapse the borders of the table into a single line. Use the text-center class to align the text in the center of the cells.
+",,Create a table ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <table class=""border-collapse border border-gray-200 w-full h-full"">
+    <tr class=""border-b border-gray-200"">
+      <th class=""px-4 py-2 text-center"">Name</th>
+      <th class=""px-4 py-2 text-center"">Age</th>
+      <th class=""px-4 py-2 text-center"">Gender</th>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Alice</td>
+      <td class=""px-4 py-2 text-center"">25</td>
+      <td class=""px-4 py-2 text-center"">Female</td>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Bob</td>
+      <td class=""px-4 py-2 text-center"">30</td>
+      <td class=""px-4 py-2 text-center"">Male</td>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Charlie</td>
+      <td class=""px-4 py-2 text-center"">35</td>
+      <td class=""px-4 py-2 text-center"">Male</td>
+    </tr>
+  </table>
+</div>
+AI-generated code. Review and use carefully. More info on FAQ.
+Report Error:
+Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Error Element (Inside Container):
+
+Add a nested <div> element with classes bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative w-80 h-48. This element will create a red box with an error message and a close button. Close Button (Inside Error Element):
+
+Create a <button> element with classes absolute top-0 right-0 px-4 py-3 and the attribute type=“button”. Inside this <button>, add a <span> element with classes text-red-400 hover:text-red-600 and the text “×”. Error Message (Inside Error Element):
+
+Add a <p> element with classes font-bold and some text for the error title. Then, add another <p> element with some text for the error details. Additional Details:
+
+Use the relative and absolute classes to position the error element and the close button element inside the container element. Use the hover:text-red-600 class to create a darker shade of red when the user hovers over the close button.
+
+HTML"
+2/13/2024 12:35:12,"Paragraphs:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Paragraph Elements (Inside Container):
+
+Add several nested <p> elements with classes text-gray-800 and some text for the paragraph content. Each of these elements will create a paragraph with a default margin between them. Additional Details:
+
+Use the text-gray-800 class to make the paragraph text contrast with the background color.
+",,Create a Paragraph ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <p class=""text-gray-800"">This is the first paragraph.</p>
+  <p class=""text-gray-800"">This is the second paragraph.</p>
+  <p class=""text-gray-800"">This is the third paragraph.</p>
+</div>"
+2/13/2024 12:38:08,"Article:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Article Element (Inside Container):
+
+Add a nested <article> element with classes bg-white rounded shadow-lg p-4 w-80 h-48. This element will create a self-contained composition that can be independently distributable or reusable. Article Title (Inside Article Element):
+
+Add a <h2> element with classes text-lg font-bold text-gray-800 and some text for the article title. Article Content (Inside Article Element):
+
+Add a <p> element with classes text-gray-600 and some text for the article content. Additional Details:
+
+Use the bg-white class to make the article element stand out from the background color. Use the rounded and shadow-lg classes to create a rounded border and a shadow effect for the article element.
+",,Create an article with desired measures,"<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <article class=""bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <h2 class=""text-lg font-bold text-gray-800"">Article Title</h2>
+    <p class=""text-gray-600"">This is a sample article with some content.</p>
+  </article>
+</div>
+"
+2/13/2024 12:40:16,"Document metadata:
+Create a <html> element with the attribute lang=“en”. This element will create the root element of the document and specify the language of the document as English. Head Element (Inside HTML Element):
+
+Add a nested <head> element. This element will contain the document metadata, such as the title, links, and meta tags. Title Element (Inside Head Element):
+
+Add a nested <title> element with some text for the document title. This element will define the title of the document, which is usually displayed in the browser’s title bar or tab. Link Element (Inside Head Element):
+
+Add a nested <link> element with the attributes rel=“stylesheet” and href. The rel attribute specifies the relationship between the document and the linked resource, which is a stylesheet in this case. The href attribute specifies the URL of the linked resource, which is a CSS file in this case. Meta Element (Inside Head Element):
+
+Add a nested <meta> element with the attributes name=“description” and content. The name attribute specifies the name of the metadata, which is a description in this case. The content attribute specifies the value of the metadata, which is a brief summary of the document in this case. Additional Details:
+
+Use the lang attribute to declare the language of the document, which can help with accessibility and search engine optimization. Use the <link> element to link to external resources, such as stylesheets, icons, and fonts. Use the <meta> element to provide additional information about the document, such as keywords, author, and viewport settings.
+",,Create a nested data ,"<html lang=""en"">
+  <head>
+    <title>Document Title</title>
+    <link rel=""stylesheet"" href=""style.css"">
+    <meta name=""description"" content=""This is a sample document with some metadata."">
+  </head>
+  <!-- The rest of the document goes here -->
+</html>"
+2/13/2024 12:42:34,"Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Anchor Element (Inside Container):
+
+Add a nested <a> element with classes text-blue-600 hover:text-blue-800 underline and the attribute href. The href attribute should point to a valid web page URL. Inside this <a>, add some text for the anchor label. Additional Details:
+
+Use the hover:text-blue-800 class to create a darker shade of blue when the user hovers over the anchor. Use the underline class to add an underline to the anchor text.
+",,Create a <div> with classes flex items,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <a class=""text-blue-600 hover:text-blue-800"
+2/13/2024 12:45:01,"Description Lists:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Description List Element (Inside Container):
+
+Add a nested <dl> element with classes list-none p-0 m-0 w-full h-full. This element will create a list of terms and descriptions, which can be used for glossaries or metadata. Term Elements (Inside Description List Element):
+
+Add several nested <dt> elements with classes font-bold text-gray-800 and some text for the term or name. Description Elements (Inside Description List Element):
+
+Add several nested <dd> elements with classes text-gray-600 and some text for the description or value of the term or name. Additional Details:
+
+Use the list-none class to remove the default list style of the <dl> element. Use the font-bold class to make the term elements stand out from the description elements.",,Create a description list ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <dl class=""list-none p-0 m-0 w-full h-full"">
+    <dt class=""font-bold text-gray-800"">HTML</dt>
+    <dd class=""text-gray-600"">HyperText Markup Language</dd>
+    <dt class=""font-bold text-gray-800"">CSS</dt>
+    <dd class=""text-gray-600"">Cascading Style Sheets</dd>
+    <dt class=""font-bold text-gray-800"">JavaScript</dt>
+    <dd class=""text-gray-600"">A scripting language for web development</dd>
+  </dl>
+</div>"
+2/13/2024 12:46:57,"Datalist:
+Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Input Element (Inside Container):
+
+Add a nested <input> element with classes border border-gray-200 px-4 py-2 rounded w-80 and the attributes type=“text” and list. The type attribute specifies the input type as text, and the list attribute specifies the id of the <datalist> element that contains the options for the input. Datalist Element (Inside Container):
+
+Add a nested <datalist> element with the attribute id. The id attribute should match the value of the list attribute of the <input> element. This element will create a list of predefined options for the input. Option Elements (Inside Datalist Element):
+
+Add several nested <option> elements with the attribute value. The value attribute specifies the value of the option, which will be displayed in the input when selected. Additional Details:
+
+Use the border and rounded classes to create a styled input element. Use the datalist element to provide autocomplete suggestions for the input element.",,Datalist,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <input class=""border border-gray-200 px-4 py-2 rounded w-80"" type=""text"" list=""languages"">
+  <datalist id=""languages"">
+    <option value=""HTML"">
+    <option value=""CSS"">
+    <option value=""JavaScript"">
+    <option value=""Python"">
+    <option value=""Java"">
+  </datalist>
+</div>"
+2/13/2024 12:50:08,"Text Area:
+Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Form Element (Inside Container):
+
+Add a nested <form> element with classes w-80 h-48. This element will create a form that can contain various input elements. Label Element (Inside Form Element):
+
+Add a nested <label> element with classes block text-gray-800 and the attribute for. The for attribute specifies the id of the <textarea> element that the label is associated with. Inside this <label>, add some text for the label of the text area. Text Area Element (Inside Form Element):
+
+Add a nested <textarea> element with classes border border-gray-200 px-4 py-2 rounded w-full h-32 mt-2 and the attribute id. The id attribute should match the value of the for attribute of the <label> element. This element will create a multi-line text input field. Additional Details:
+
+Use the block class to display the label element as a block-level element. Use the mt-2 class to create a margin-top of 0.5rem between the label and the text area elements. Use the border and rounded classes to create a styled text area element.",,Forming text area inside a form,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <form class=""w-80 h-48"">
+    <label class=""block text-gray-800"" for=""message"">Your Message</label>
+    <textarea class=""border border-gray-200 px-4 py-2 rounded w-full h-32 mt-2"" id=""message""></textarea>
+  </form>
+</div>"
+2/13/2024 12:51:58,"Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Image Element (Inside Container):
+
+Add a nested <img> element with classes w-32 h-32 rounded-full and the attribute src. The src attribute should point to a valid image file URL. This element will create an image that represents a user’s avatar or profile picture. Additional Details:
+
+Use the w-32 and h-32 classes to set the width and height of the image element to 8rem. Use the rounded-full class to create a circular shape for the image element.
+",,Create an image element inside a form,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <img class=""w-32 h-32 rounded-full"" src=""https://example.com/avatar.jpg"">
+</div>"
+2/13/2024 13:08:42,"Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Heatmap Element (Inside Container):
+
+Add a nested <canvas> element with classes w-80 h-48 and the attribute id. The id attribute should be a unique identifier for the heatmap element. This element will create a canvas where the heatmap will be drawn using JavaScript and a heatmap library, such as heatmap.js1. Additional Details:
+
+Use the <canvas> element to create a blank area where the heatmap will be rendered using JavaScript. Use a heatmap library, such as heatmap.js, to create a heatmap that shows the intensity or frequency of data values in a given area. You will need to include the library script in your HTML document and write some JavaScript code to initialize and configure the heatmap. You can find examples and documentation on the heatmap.js website1.",,Heatmaps,"<div class=“flex items-center justify-center bg-gray-100 w-96 h-64”> <canvas class=“w-80 h-48” id=“myHeatmap”></canvas> </div>
+
+<!-- Include the heatmap.js library script --> <script src=“https://cdnjs.cloudflare.com/ajax/libs/heatmap.js/2.0.5/heatmap.min.js”></script>
+
+<!-- Write some JavaScript code to create the heatmap --> <script> // Get the canvas element by id var canvas = document.getElementById(‘myHeatmap’);
+
+// Create a new heatmap instance var heatmap = heatmapFactory.create({ // Specify the canvas element as the container container: canvas });
+
+// Generate some random data points for the heatmap var points = []; var max = 0; var width = canvas.width; var height = canvas.height; var len = 200;
+
+while (len–) { var val = Math.floor(Math.random()*100); max = Math.max(max, val); var point = { x: Math.floor(Math.random()*width), y: Math.floor(Math.random()*height), value: val }; points.push(point); }
+
+// Set the data and the maximum value for the heatmap heatmap.setData({ max: max, data: points }); </script>"
+1/30/2024 14:30:59,"
+Create a <div> with classes relative w-full h-64 overflow-hidden.
+Slides Container (Inside Container):
+
+Add a nested <div> element with classes absolute inset-0 flex transition-transform duration-1000 ease-in-out. This element will contain the slides and will be animated using CSS transforms.
+Slide Elements (Inside Slides Container):
+
+Include four nested <div> elements with classes w-full h-full flex-shrink-0. Each of these elements will represent a slide. Inside each slide element, add an <img> element with classes w-full h-full object-cover and the attribute src. The src attribute should point to a valid image file URL. Optionally, you can also add a <div> element with classes absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent to create a gradient overlay on the slide. Inside this <div>, you can add a <h3> element with classes text-xl font-bold text-white and some text for the slide title.
+Navigation Buttons (Inside Container):
+
+Create two <button> elements with classes absolute top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-full bg-white shadow text-gray-800 and the attribute type=""button"". These elements will be used to navigate between the slides. The first <button> should have the class left-4 and the text ""<"". The second <button> should have the class right-4 and the text "">"".
+Additional Details:
+
+Use the transition-transform and duration-1000 classes to create a smooth transition effect for the slides container.
+Use the ease-in-out class to create a smooth acceleration and deceleration for the slides container.
+Use the object-cover class to make the images fit the slide elements without stretching or cropping.
+Use the bg-gradient-to-t class to create a linear gradient from bottom to top on the overlay element.
+
+.",,Create a Carousel,"<div class=""relative w-full h-64 overflow-hidden"">
+  <div class=""absolute inset-0 flex transition-transform duration-1000 ease-in-out"">
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image1.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 1</h3>
+      </div>
+    </div>
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image2.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 2</h3>
+      </div>
+    </div>
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image3.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 3</h3>
+      </div>
+    </div>
+    <div class=""w-full h-full flex-shrink-0"">
+      <img class=""w-full h-full object-cover"" src=""https://example.com/image4.jpg"">
+      <div class=""absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent"">
+        <h3 class=""text-xl font-bold text-white"">Slide 4</h3>
+      </div>
+    </div>
+  </div>
+  <button class=""absolute top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-full bg-white shadow text-gray-800 left-4"" type=""button""><</button>
+  <button class=""absolute top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-full bg-white shadow text-gray-800 right-4"" type=""button"">></button>
+</div>
+"
+1/30/2024 14:27:06,"Video Player
+
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64.
+Video Element (Inside Container):
+
+Add a nested <video> element with classes w-full h-full and the attributes src, controls, and autoplay. The src attribute should point to a valid video file URL.
+Caption Element (Inside Container):
+
+Include another nested <div> with classes text-center text-gray-700 p-2. Inside this <div>, add a <p> element with some text to describe the video.
+Additional Details:
+
+Use the controls attribute to enable the user to play, pause, and adjust the volume of the video.
+Use the autoplay attribute to make the video start playing as soon as it is loaded.
+",Create a Video Player,"
+","<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <video class=""w-full h-full"" src=""https://example.com/video.mp4"" controls autoplay></video>
+  <div class=""text-center text-gray-700 p-2"">
+    <p>This is a sample video player</p>
+  </div>
+</div>
+"
+,,,,
+2/13/2024 12:35:12,"Paragraphs:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Paragraph Elements (Inside Container):
+
+Add several nested <p> elements with classes text-gray-800 and some text for the paragraph content. Each of these elements will create a paragraph with a default margin between them. Additional Details:
+
+Use the text-gray-800 class to make the paragraph text contrast with the background color.
+",,Create a Paragraph ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <p class=""text-gray-800"">This is the first paragraph.</p>
+  <p class=""text-gray-800"">This is the second paragraph.</p>
+  <p class=""text-gray-800"">This is the third paragraph.</p>
+</div>"
+2/13/2024 12:38:08,"Article:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Article Element (Inside Container):
+
+Add a nested <article> element with classes bg-white rounded shadow-lg p-4 w-80 h-48. This element will create a self-contained composition that can be independently distributable or reusable. Article Title (Inside Article Element):
+
+Add a <h2> element with classes text-lg font-bold text-gray-800 and some text for the article title. Article Content (Inside Article Element):
+
+Add a <p> element with classes text-gray-600 and some text for the article content. Additional Details:
+
+Use the bg-white class to make the article element stand out from the background color. Use the rounded and shadow-lg classes to create a rounded border and a shadow effect for the article element.
+",,Create an article with desired measures,"<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <article class=""bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <h2 class=""text-lg font-bold text-gray-800"">Article Title</h2>
+    <p class=""text-gray-600"">This is a sample article with some content.</p>
+  </article>
+</div>
+"
+,,,,
+2/13/2024 12:42:34,"Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Anchor Element (Inside Container):
+
+Add a nested <a> element with classes text-blue-600 hover:text-blue-800 underline and the attribute href. The href attribute should point to a valid web page URL. Inside this <a>, add some text for the anchor label. Additional Details:
+
+Use the hover:text-blue-800 class to create a darker shade of blue when the user hovers over the anchor. Use the underline class to add an underline to the anchor text.
+",,Create a <div> with classes flex items,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <a class=""text-blue-600 hover:text-blue-800"
+1/30/2024 14:29:12,"Create a <div> with classes fixed inset-0 flex items-center justify-center z-10.
+Overlay Element (Inside Container):
+
+Add a nested <div> element with classes absolute inset-0 bg-black opacity-50 to create a dark overlay behind the dialog box.
+Dialog Element (Inside Container):
+
+Include another nested <div> element with classes relative bg-white rounded shadow-lg p-4 w-80 h-48 to create the dialog box itself.
+Close Button (Inside Dialog Element):
+
+Create a <button> element with classes absolute top-2 right-2 text-gray-400 hover:text-gray-600 and the attribute type=""button"". Inside this <button>, add a <span> element with the text ""×"".
+Dialog Content (Inside Dialog Element):
+
+Add a <div> element with classes flex flex-col h-full. Inside this <div>, add a <h3> element with classes text-lg font-bold text-gray-800 and some text for the dialog title. Then, add a <p> element with classes flex-1 text-gray-600 and some text for the dialog message. Finally, add a <div> element with classes flex gap-2 mt-4. Inside this <div>, add two <button> elements with classes px-4 py-2 rounded and the attribute type=""button"". The first <button> should have classes bg-blue-600 text-white hover:bg-blue-700 and some text for the confirm action. The second <button> should have classes bg-gray-200 text-gray-800 hover:bg-gray-300 and some text for the cancel action.
+Additional Details:
+
+Use the fixed and inset-0 classes to position the container element over the entire viewport.
+Use the z-10 class to ensure the container element is above other elements on the page.
+Use the relative and absolute classes to position the dialog element and the close button element inside the container element.
+
+.",,Create a Dialog Box,"<div class=""fixed inset-0 flex items-center justify-center z-10"">
+  <div class=""absolute inset-0 bg-black opacity-50""></div>
+  <div class=""relative bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <button class=""absolute top-2 right-2 text-gray-400 hover:text-gray-600"" type=""button"">
+      <span>×</span>
+    </button>
+    <div class=""flex flex-col h-full"">
+      <h3 class=""text-lg font-bold text-gray-800"">Dialog Title</h3>
+      <p class=""flex-1 text-gray-600"">This is a sample dialog box with some message.</p>
+      <div class=""flex gap-2 mt-4"">
+        <button class=""px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700"" type=""button"">Confirm</button>
+        <button class=""px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300"" type=""button"">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+"
+,,,,
+2/13/2024 12:38:08,"Article:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Article Element (Inside Container):
+
+Add a nested <article> element with classes bg-white rounded shadow-lg p-4 w-80 h-48. This element will create a self-contained composition that can be independently distributable or reusable. Article Title (Inside Article Element):
+
+Add a <h2> element with classes text-lg font-bold text-gray-800 and some text for the article title. Article Content (Inside Article Element):
+
+Add a <p> element with classes text-gray-600 and some text for the article content. Additional Details:
+
+Use the bg-white class to make the article element stand out from the background color. Use the rounded and shadow-lg classes to create a rounded border and a shadow effect for the article element.
+",,Create an article with desired measures,"<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <article class=""bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <h2 class=""text-lg font-bold text-gray-800"">Article Title</h2>
+    <p class=""text-gray-600"">This is a sample article with some content.</p>
+  </article>
+</div>
+"
+,,,,
+2/13/2024 12:35:12,"Paragraphs:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Paragraph Elements (Inside Container):
+
+Add several nested <p> elements with classes text-gray-800 and some text for the paragraph content. Each of these elements will create a paragraph with a default margin between them. Additional Details:
+
+Use the text-gray-800 class to make the paragraph text contrast with the background color.
+",,Create a Paragraph ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <p class=""text-gray-800"">This is the first paragraph.</p>
+  <p class=""text-gray-800"">This is the second paragraph.</p>
+  <p class=""text-gray-800"">This is the third paragraph.</p>
+</div>"
+,,,,
+,,,,
+,,,,
+1/30/2024 14:27:06,"Video Player
+
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64.
+Video Element (Inside Container):
+
+Add a nested <video> element with classes w-full h-full and the attributes src, controls, and autoplay. The src attribute should point to a valid video file URL.
+Caption Element (Inside Container):
+
+Include another nested <div> with classes text-center text-gray-700 p-2. Inside this <div>, add a <p> element with some text to describe the video.
+Additional Details:
+
+Use the controls attribute to enable the user to play, pause, and adjust the volume of the video.
+Use the autoplay attribute to make the video start playing as soon as it is loaded.
+",Create a Video Player,"
+","<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <video class=""w-full h-full"" src=""https://example.com/video.mp4"" controls autoplay></video>
+  <div class=""text-center text-gray-700 p-2"">
+    <p>This is a sample video player</p>
+  </div>
+</div>
+"
+2/13/2024 12:38:08,"Article:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Article Element (Inside Container):
+
+Add a nested <article> element with classes bg-white rounded shadow-lg p-4 w-80 h-48. This element will create a self-contained composition that can be independently distributable or reusable. Article Title (Inside Article Element):
+
+Add a <h2> element with classes text-lg font-bold text-gray-800 and some text for the article title. Article Content (Inside Article Element):
+
+Add a <p> element with classes text-gray-600 and some text for the article content. Additional Details:
+
+Use the bg-white class to make the article element stand out from the background color. Use the rounded and shadow-lg classes to create a rounded border and a shadow effect for the article element.
+",,Create an article with desired measures,"<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <article class=""bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <h2 class=""text-lg font-bold text-gray-800"">Article Title</h2>
+    <p class=""text-gray-600"">This is a sample article with some content.</p>
+  </article>
+</div>
+"
+2/13/2024 12:28:23,"Table:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Table Element (Inside Container):
+
+Add a nested <table> element with classes border-collapse border border-gray-200 w-full h-full. This element will create a table with borders and fill the container. Table Row Elements (Inside Table Element):
+
+Include several nested <tr> elements with classes border-b border-gray-200. Each of these elements will represent a table row. Table Cell Elements (Inside Table Row Elements):
+
+Include several nested <td> or <th> elements with classes px-4 py-2 text-center. Each of these elements will represent a table cell. The <td> element is used for regular data cells, while the <th> element is used for header cells. Inside each cell element, add some text for the cell content. Additional Details:
+
+Use the border-collapse class to collapse the borders of the table into a single line. Use the text-center class to align the text in the center of the cells.
+",,Create a table ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <table class=""border-collapse border border-gray-200 w-full h-full"">
+    <tr class=""border-b border-gray-200"">
+      <th class=""px-4 py-2 text-center"">Name</th>
+      <th class=""px-4 py-2 text-center"">Age</th>
+      <th class=""px-4 py-2 text-center"">Gender</th>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Alice</td>
+      <td class=""px-4 py-2 text-center"">25</td>
+      <td class=""px-4 py-2 text-center"">Female</td>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Bob</td>
+      <td class=""px-4 py-2 text-center"">30</td>
+      <td class=""px-4 py-2 text-center"">Male</td>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Charlie</td>
+      <td class=""px-4 py-2 text-center"">35</td>
+      <td class=""px-4 py-2 text-center"">Male</td>
+    </tr>
+  </table>
+</div>
+AI-generated code. Review and use carefully. More info on FAQ.
+Report Error:
+Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Error Element (Inside Container):
+
+Add a nested <div> element with classes bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative w-80 h-48. This element will create a red box with an error message and a close button. Close Button (Inside Error Element):
+
+Create a <button> element with classes absolute top-0 right-0 px-4 py-3 and the attribute type=“button”. Inside this <button>, add a <span> element with classes text-red-400 hover:text-red-600 and the text “×”. Error Message (Inside Error Element):
+
+Add a <p> element with classes font-bold and some text for the error title. Then, add another <p> element with some text for the error details. Additional Details:
+
+Use the relative and absolute classes to position the error element and the close button element inside the container element. Use the hover:text-red-600 class to create a darker shade of red when the user hovers over the close button.
+
+HTML"
+2/13/2024 12:35:12,"Paragraphs:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Paragraph Elements (Inside Container):
+
+Add several nested <p> elements with classes text-gray-800 and some text for the paragraph content. Each of these elements will create a paragraph with a default margin between them. Additional Details:
+
+Use the text-gray-800 class to make the paragraph text contrast with the background color.
+",,Create a Paragraph ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <p class=""text-gray-800"">This is the first paragraph.</p>
+  <p class=""text-gray-800"">This is the second paragraph.</p>
+  <p class=""text-gray-800"">This is the third paragraph.</p>
+</div>"
+,,,,
+2/13/2024 12:42:34,"Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Anchor Element (Inside Container):
+
+Add a nested <a> element with classes text-blue-600 hover:text-blue-800 underline and the attribute href. The href attribute should point to a valid web page URL. Inside this <a>, add some text for the anchor label. Additional Details:
+
+Use the hover:text-blue-800 class to create a darker shade of blue when the user hovers over the anchor. Use the underline class to add an underline to the anchor text.
+",,Create a <div> with classes flex items,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <a class=""text-blue-600 hover:text-blue-800"
+1/30/2024 14:29:12,"Create a <div> with classes fixed inset-0 flex items-center justify-center z-10.
+Overlay Element (Inside Container):
+
+Add a nested <div> element with classes absolute inset-0 bg-black opacity-50 to create a dark overlay behind the dialog box.
+Dialog Element (Inside Container):
+
+Include another nested <div> element with classes relative bg-white rounded shadow-lg p-4 w-80 h-48 to create the dialog box itself.
+Close Button (Inside Dialog Element):
+
+Create a <button> element with classes absolute top-2 right-2 text-gray-400 hover:text-gray-600 and the attribute type=""button"". Inside this <button>, add a <span> element with the text ""×"".
+Dialog Content (Inside Dialog Element):
+
+Add a <div> element with classes flex flex-col h-full. Inside this <div>, add a <h3> element with classes text-lg font-bold text-gray-800 and some text for the dialog title. Then, add a <p> element with classes flex-1 text-gray-600 and some text for the dialog message. Finally, add a <div> element with classes flex gap-2 mt-4. Inside this <div>, add two <button> elements with classes px-4 py-2 rounded and the attribute type=""button"". The first <button> should have classes bg-blue-600 text-white hover:bg-blue-700 and some text for the confirm action. The second <button> should have classes bg-gray-200 text-gray-800 hover:bg-gray-300 and some text for the cancel action.
+Additional Details:
+
+Use the fixed and inset-0 classes to position the container element over the entire viewport.
+Use the z-10 class to ensure the container element is above other elements on the page.
+Use the relative and absolute classes to position the dialog element and the close button element inside the container element.
+
+.",,Create a Dialog Box,"<div class=""fixed inset-0 flex items-center justify-center z-10"">
+  <div class=""absolute inset-0 bg-black opacity-50""></div>
+  <div class=""relative bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <button class=""absolute top-2 right-2 text-gray-400 hover:text-gray-600"" type=""button"">
+      <span>×</span>
+    </button>
+    <div class=""flex flex-col h-full"">
+      <h3 class=""text-lg font-bold text-gray-800"">Dialog Title</h3>
+      <p class=""flex-1 text-gray-600"">This is a sample dialog box with some message.</p>
+      <div class=""flex gap-2 mt-4"">
+        <button class=""px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700"" type=""button"">Confirm</button>
+        <button class=""px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300"" type=""button"">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+"
+2/13/2024 12:35:12,"Paragraphs:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Paragraph Elements (Inside Container):
+
+Add several nested <p> elements with classes text-gray-800 and some text for the paragraph content. Each of these elements will create a paragraph with a default margin between them. Additional Details:
+
+Use the text-gray-800 class to make the paragraph text contrast with the background color.
+",,Create a Paragraph ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <p class=""text-gray-800"">This is the first paragraph.</p>
+  <p class=""text-gray-800"">This is the second paragraph.</p>
+  <p class=""text-gray-800"">This is the third paragraph.</p>
+</div>"
+2/13/2024 12:35:12,"Paragraphs:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Paragraph Elements (Inside Container):
+
+Add several nested <p> elements with classes text-gray-800 and some text for the paragraph content. Each of these elements will create a paragraph with a default margin between them. Additional Details:
+
+Use the text-gray-800 class to make the paragraph text contrast with the background color.
+",,Create a Paragraph ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <p class=""text-gray-800"">This is the first paragraph.</p>
+  <p class=""text-gray-800"">This is the second paragraph.</p>
+  <p class=""text-gray-800"">This is the third paragraph.</p>
+</div>"
+1/30/2024 14:27:06,"Video Player
+
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64.
+Video Element (Inside Container):
+
+Add a nested <video> element with classes w-full h-full and the attributes src, controls, and autoplay. The src attribute should point to a valid video file URL.
+Caption Element (Inside Container):
+
+Include another nested <div> with classes text-center text-gray-700 p-2. Inside this <div>, add a <p> element with some text to describe the video.
+Additional Details:
+
+Use the controls attribute to enable the user to play, pause, and adjust the volume of the video.
+Use the autoplay attribute to make the video start playing as soon as it is loaded.
+",Create a Video Player,"
+","<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <video class=""w-full h-full"" src=""https://example.com/video.mp4"" controls autoplay></video>
+  <div class=""text-center text-gray-700 p-2"">
+    <p>This is a sample video player</p>
+  </div>
+</div>
+"
+2/13/2024 12:38:08,"Article:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Article Element (Inside Container):
+
+Add a nested <article> element with classes bg-white rounded shadow-lg p-4 w-80 h-48. This element will create a self-contained composition that can be independently distributable or reusable. Article Title (Inside Article Element):
+
+Add a <h2> element with classes text-lg font-bold text-gray-800 and some text for the article title. Article Content (Inside Article Element):
+
+Add a <p> element with classes text-gray-600 and some text for the article content. Additional Details:
+
+Use the bg-white class to make the article element stand out from the background color. Use the rounded and shadow-lg classes to create a rounded border and a shadow effect for the article element.
+",,Create an article with desired measures,"<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <article class=""bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <h2 class=""text-lg font-bold text-gray-800"">Article Title</h2>
+    <p class=""text-gray-600"">This is a sample article with some content.</p>
+  </article>
+</div>
+"
+2/13/2024 12:28:23,"Table:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Table Element (Inside Container):
+
+Add a nested <table> element with classes border-collapse border border-gray-200 w-full h-full. This element will create a table with borders and fill the container. Table Row Elements (Inside Table Element):
+
+Include several nested <tr> elements with classes border-b border-gray-200. Each of these elements will represent a table row. Table Cell Elements (Inside Table Row Elements):
+
+Include several nested <td> or <th> elements with classes px-4 py-2 text-center. Each of these elements will represent a table cell. The <td> element is used for regular data cells, while the <th> element is used for header cells. Inside each cell element, add some text for the cell content. Additional Details:
+
+Use the border-collapse class to collapse the borders of the table into a single line. Use the text-center class to align the text in the center of the cells.
+",,Create a table ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <table class=""border-collapse border border-gray-200 w-full h-full"">
+    <tr class=""border-b border-gray-200"">
+      <th class=""px-4 py-2 text-center"">Name</th>
+      <th class=""px-4 py-2 text-center"">Age</th>
+      <th class=""px-4 py-2 text-center"">Gender</th>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Alice</td>
+      <td class=""px-4 py-2 text-center"">25</td>
+      <td class=""px-4 py-2 text-center"">Female</td>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Bob</td>
+      <td class=""px-4 py-2 text-center"">30</td>
+      <td class=""px-4 py-2 text-center"">Male</td>
+    </tr>
+    <tr class=""border-b border-gray-200"">
+      <td class=""px-4 py-2 text-center"">Charlie</td>
+      <td class=""px-4 py-2 text-center"">35</td>
+      <td class=""px-4 py-2 text-center"">Male</td>
+    </tr>
+  </table>
+</div>
+AI-generated code. Review and use carefully. More info on FAQ.
+Report Error:
+Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Error Element (Inside Container):
+
+Add a nested <div> element with classes bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative w-80 h-48. This element will create a red box with an error message and a close button. Close Button (Inside Error Element):
+
+Create a <button> element with classes absolute top-0 right-0 px-4 py-3 and the attribute type=“button”. Inside this <button>, add a <span> element with classes text-red-400 hover:text-red-600 and the text “×”. Error Message (Inside Error Element):
+
+Add a <p> element with classes font-bold and some text for the error title. Then, add another <p> element with some text for the error details. Additional Details:
+
+Use the relative and absolute classes to position the error element and the close button element inside the container element. Use the hover:text-red-600 class to create a darker shade of red when the user hovers over the close button.
+
+HTML"
+,,,,
+,,,,
+2/13/2024 12:35:12,"Paragraphs:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Paragraph Elements (Inside Container):
+
+Add several nested <p> elements with classes text-gray-800 and some text for the paragraph content. Each of these elements will create a paragraph with a default margin between them. Additional Details:
+
+Use the text-gray-800 class to make the paragraph text contrast with the background color.
+",,Create a Paragraph ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <p class=""text-gray-800"">This is the first paragraph.</p>
+  <p class=""text-gray-800"">This is the second paragraph.</p>
+  <p class=""text-gray-800"">This is the third paragraph.</p>
+</div>"
+,,,,
+2/13/2024 12:42:34,"Create a <div> with classes flex items-center justify-center bg-gray-100 w-96 h-64. Anchor Element (Inside Container):
+
+Add a nested <a> element with classes text-blue-600 hover:text-blue-800 underline and the attribute href. The href attribute should point to a valid web page URL. Inside this <a>, add some text for the anchor label. Additional Details:
+
+Use the hover:text-blue-800 class to create a darker shade of blue when the user hovers over the anchor. Use the underline class to add an underline to the anchor text.
+",,Create a <div> with classes flex items,"<div class=""flex items-center justify-center bg-gray-100 w-96 h-64"">
+  <a class=""text-blue-600 hover:text-blue-800"
+1/30/2024 14:29:12,"Create a <div> with classes fixed inset-0 flex items-center justify-center z-10.
+Overlay Element (Inside Container):
+
+Add a nested <div> element with classes absolute inset-0 bg-black opacity-50 to create a dark overlay behind the dialog box.
+Dialog Element (Inside Container):
+
+Include another nested <div> element with classes relative bg-white rounded shadow-lg p-4 w-80 h-48 to create the dialog box itself.
+Close Button (Inside Dialog Element):
+
+Create a <button> element with classes absolute top-2 right-2 text-gray-400 hover:text-gray-600 and the attribute type=""button"". Inside this <button>, add a <span> element with the text ""×"".
+Dialog Content (Inside Dialog Element):
+
+Add a <div> element with classes flex flex-col h-full. Inside this <div>, add a <h3> element with classes text-lg font-bold text-gray-800 and some text for the dialog title. Then, add a <p> element with classes flex-1 text-gray-600 and some text for the dialog message. Finally, add a <div> element with classes flex gap-2 mt-4. Inside this <div>, add two <button> elements with classes px-4 py-2 rounded and the attribute type=""button"". The first <button> should have classes bg-blue-600 text-white hover:bg-blue-700 and some text for the confirm action. The second <button> should have classes bg-gray-200 text-gray-800 hover:bg-gray-300 and some text for the cancel action.
+Additional Details:
+
+Use the fixed and inset-0 classes to position the container element over the entire viewport.
+Use the z-10 class to ensure the container element is above other elements on the page.
+Use the relative and absolute classes to position the dialog element and the close button element inside the container element.
+
+.",,Create a Dialog Box,"<div class=""fixed inset-0 flex items-center justify-center z-10"">
+  <div class=""absolute inset-0 bg-black opacity-50""></div>
+  <div class=""relative bg-white rounded shadow-lg p-4 w-80 h-48"">
+    <button class=""absolute top-2 right-2 text-gray-400 hover:text-gray-600"" type=""button"">
+      <span>×</span>
+    </button>
+    <div class=""flex flex-col h-full"">
+      <h3 class=""text-lg font-bold text-gray-800"">Dialog Title</h3>
+      <p class=""flex-1 text-gray-600"">This is a sample dialog box with some message.</p>
+      <div class=""flex gap-2 mt-4"">
+        <button class=""px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700"" type=""button"">Confirm</button>
+        <button class=""px-4 py-2 rounded bg-gray-200 text-gray-800 hover:bg-gray-300"" type=""button"">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+"
+2/13/2024 12:35:12,"Paragraphs:
+Create a <div> with classes flex flex-col items-center justify-center bg-gray-100 w-96 h-64. Paragraph Elements (Inside Container):
+
+Add several nested <p> elements with classes text-gray-800 and some text for the paragraph content. Each of these elements will create a paragraph with a default margin between them. Additional Details:
+
+Use the text-gray-800 class to make the paragraph text contrast with the background color.
+",,Create a Paragraph ,"
+<div class=""flex flex-col items-center justify-center bg-gray-100 w-96 h-64"">
+  <p class=""text-gray-800"">This is the first paragraph.</p>
+  <p class=""text-gray-800"">This is the second paragraph.</p>
+  <p class=""text-gray-800"">This is the third paragraph.</p>
+</div>"
