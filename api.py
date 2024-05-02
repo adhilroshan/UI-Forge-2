@@ -9,6 +9,10 @@ from query_data import query_rag
 from pydantic import BaseModel
 class Query(BaseModel):
     query: str
+class Bundler(BaseModel):
+    html: str
+    css: str
+    js: str
 
 app = FastAPI()
 # origins = [
@@ -35,6 +39,10 @@ def read_root():
 @app.post("/query")
 async def query(query:Query):
     response_text = query_rag(query)
+    return {"response": response_text}
+@app.post("/download-bundle")
+async def query(query:Bundler):
+    response_text = query_rag(query.html,query.css,query.js)
     return {"response": response_text}
 
 

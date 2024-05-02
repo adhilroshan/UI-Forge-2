@@ -28,6 +28,34 @@ Context:
 Code:
 """
 
+GENERATE_LIT= """
+Convert the following HTML, CSS, and JavaScript code into a Lit web component:
+
+HTML:
+{html}
+
+CSS:
+{css}
+
+JavaScript:
+{js}
+
+To create the Lit web component, follow these steps:
+
+1. Import the necessary dependencies from the Lit library.
+2. Create a new class that extends LitElement.
+3. Define the component's properties, if any.
+4. Implement the render() method to return the component's HTML template.
+5. Move the HTML markup from the provided HTML code into the render() method's template literal.
+6. Move the CSS styles into a static styles property in the component class.
+7. Move the JavaScript code into the component class methods or event handlers.
+8. Encapsulate any DOM interactions or state management within the component class.
+9. Use the @property decorator to define reactive properties, if needed.
+10. Export the component class so it can be used in other parts of the application.
+
+Once you have completed these steps, provide the Lit web component code as the solution.
+"""
+
 def main():
     # Create CLI.
     parser = argparse.ArgumentParser()
@@ -55,6 +83,18 @@ def query_rag(query_text: str):
 
     sources = [doc.metadata.get("id", None) for doc, _score in results]
     formatted_response = f"Response: {response_text}\nSources: {sources}"
+    print(formatted_response)
+    return formatted_response
+
+def componentBundler(html:str, css:str,js:str):
+    prompt_template = ChatPromptTemplate.from_template(GENERATE_LIT)
+    prompt = prompt_template.format(html=html,css=css,js=js)
+    print(prompt)
+
+    model = Ollama(model="llama3")
+    response_text = model.invoke(prompt)
+
+    formatted_response = f"Response: {response_text}\n"
     print(formatted_response)
     return formatted_response
 
