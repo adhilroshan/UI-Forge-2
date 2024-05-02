@@ -10,14 +10,19 @@ from pydantic import BaseModel
 class Query(BaseModel):
     query: str
 
-
 app = FastAPI()
-origins = [
-    "http://localhost:3000",  # Allow requests from this origin
-]
+# origins = [
+#     "http://localhost.tiangolo.com",
+#     "https://localhost.tiangolo.com",
+#     "http://localhost",
+#     "http://localhost:3000",
+#     "http://127.0.0.1:3000",
+#     # "http://localhost:3000/query",
+# ]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -34,7 +39,7 @@ async def query(query:Query):
 
 
 # @app.post("/uploadpdf/")
-# async def upload_pdf(file: UploadF    ile = File(...)):
+# async def upload_pdf(file: UploadFile = File(...)):
 #     with open(os.path.join('data', file.filename), 'wb') as buffer:
 #         shutil.copyfileobj(file.file, buffer)
     
