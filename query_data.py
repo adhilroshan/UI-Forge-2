@@ -19,7 +19,7 @@ CHROMA_PATH = "chroma"
 
 PROMPT_TEMPLATE = """
 Given a simple description of a website component, generate the HTML, CSS, and JavaScript code for that component. Use the context provided to help you generate the code.
-
+generate stunning ui. 
 Component Description: {question}
 
 Context:
@@ -78,7 +78,7 @@ def query_rag(query_text: str):
     prompt = prompt_template.format(context=context_text, question=query_text)
     print(prompt)
 
-    model = Ollama(model="llama3")
+    model = Ollama(model="codeqwen")
     response_text = model.invoke(prompt)
 
     sources = [doc.metadata.get("id", None) for doc, _score in results]
@@ -91,7 +91,7 @@ def componentBundler(html:str, css:str,js:str):
     prompt = prompt_template.format(html=html,css=css,js=js)
     print(prompt)
 
-    model = Ollama(model="llama3")
+    model = Ollama(model="codeqwen")
     response_text = model.invoke(prompt)
 
     formatted_response = f"Response: {response_text}\n"

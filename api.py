@@ -40,9 +40,10 @@ def read_root():
 async def query(query:Query):
     response_text = query_rag(query)
     return {"response": response_text}
-@app.post("/download-bundle")
-async def query(query:Bundler):
-    response_text = query_rag(query.html,query.css,query.js)
+
+@app.post("/downloadBundle")
+async def downloadBundle(query:Bundler):
+    response_text = componentBundler(query.html,query.css,query.js)
     return {"response": response_text}
 
 
